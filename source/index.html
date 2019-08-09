@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Приложение Пинк</title>
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
 </head>
 
@@ -38,10 +37,9 @@
     </header>
     <main class="page-main">
       <div class="page-main__wrapper">
-        <h1 class="header-title">Взгляните на жизнь иначе!</h1>
+        <h1 class="header-title visually-hidden">Взгляните на жизнь иначе!</h1>
         <section class="download-app">
             <h2 class="visually-hidden">Установить приложение Пинк</h2>
-            <img class="download-app__header-image" src="img/iphone-hand-mobile@1x.png" alt="Изображение работы Пинк">
             <a class="download-app__button" href="#">Скачать приложение</a>
             <div class="download-app__system-icons">
                 <a class="download-app__link download-app__link--apple"><img class="download-app__image download-app__image--apple" src="img/logo-apple.svg" width="47" height="56" alt="Иконка Apple"></a>
@@ -67,13 +65,18 @@
                                 <h3 class="abilities__title">Заводит новых друзей</h3>
                                 <p class="abilities__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
                 </ul>
-                <img class="abilities__down-image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Изображение экрана телефона со смайликом">
+                <div class="abilities__wrapper">
+                <img class="abilities__down-image smile-image" src="img/iphone-screen-mobile@1x.png" alt="Изображение экрана телефона со смайликом">
+                <img class="abilities__down-image red-image" src="img/iphone-screen-2-desktop@1x.png" alt="Изображение экрана телефона красный вид">
+                <img class="abilities__down-image black-image" src="img/iphone-screen-1-desktop@1x.png" alt="Изображение экрана телефона черно-белый вид">
+              </div>
             </div>
         </section>
         <section class="reviews">
             <h2 class="visually-hidden">Отзывы о нас</h2>
             <div class="reviews__list">
                 <blockquote class="reviews__item">
+                    <cite class="reviews__user-info">25 лет, водитель трамвая</cite>
                     <cite class="reviews__user-name">Николай Петров</cite>
                     <p class="reviews__user-text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
                 </blockquote>
