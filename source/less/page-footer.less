@@ -1,9 +1,17 @@
 .social__list {
   list-style: none;
+  display: flex;
+}
+
+.page-footer--active {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer__wrapper {
     display: flex;
+  }
+  .page-footer--active {
+    display: block;
   }
 }
