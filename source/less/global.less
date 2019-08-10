@@ -1,11 +1,24 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
   color: #000000;
   background-color: #ffffff;
+  width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    width: 660px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    width: 1200px;
+  }
 }
 
 .visually-hidden {
@@ -41,4 +54,17 @@ a {
   font-style: normal;
   line-height: normal;
   color: #ffffff;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
