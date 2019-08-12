@@ -1,0 +1,80 @@
+.research {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .research {
+    display: block;
+  }
+
+  .research__effect {
+    display: flex;
+  }
+
+  .research__effect-time {
+    font-size: 96px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 150px;
+    color: #d22856;
+    border: 13px solid #d22856;
+    border-radius: 50%;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 63px;
+    padding-bottom: 69px;
+    margin: 0;
+    margin-right: 88px;
+    margin-left: 39px;
+    background-image: url(../img/timer-svg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .research__effect-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 36px;
+    color: #000000;
+  }
+
+  .research__effect-description {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    line-height: 24px;
+    color: #283645;
+  }
+
+  .research__effect-link {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    line-height: 24px;
+    color: #d22856;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research__effect-time {
+    font-size: 120px;
+    line-height: 187px;
+    margin-right: 90px;
+  }
+
+  .research__effect-title {
+    font-size: 30px;
+  }
+
+  .research__effect-description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .research__effect-link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

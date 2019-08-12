@@ -1,10 +1,11 @@
 .tariffs {
   margin: 0;
+  overflow: hidden;
 }
 
-.tariffs-table {
+.tariffs__table {
   width: auto;
-  transform: translateX(-256px);
+  transform: translateX(-28%);
 }
 
 .tariffs__names,
@@ -18,8 +19,8 @@
 
 .tariffs__item,
 .tariffs__availability {
-  border: solid 2px #e5e5e5;
   width: 276px;
+  border: solid 2px #e5e5e5;
   text-align: center;
 }
 
@@ -45,10 +46,8 @@
   font-weight: bold;
   text-align: center;
   color: #ffffff;
-  padding-left: 91px;
-  padding-top: 23px;
-  padding-right: 90px;
-  padding-bottom: 12px;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .tariffs__price {
@@ -57,6 +56,8 @@
   font-weight: 300;
   text-align: center;
   color: #ffffff;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .tariffs__option-name {
@@ -79,4 +80,73 @@
   padding-top: 22px;
   padding-right: 75px;
   padding-bottom: 23px;
+}
+
+@media (min-width: @tablet-width) {
+  .tariffs {
+    overflow: visible;
+  }
+
+  .tariffs__table {
+    transform: none;
+  }
+
+  .tariffs__option-name-mobile:first-child {
+    display: block;
+  }
+
+  .tariffs__option-name {
+    font-size: 15px;
+    text-transform: none;
+    padding-left: 14px;
+  }
+
+  .tariffs__name {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .tariffs__price {
+    font-size: 17px;
+    margin-bottom: 14px;
+  }
+
+  .tariffs__availability-standart {
+    display: table-cell;
+}
+
+  .tariffs__option-name-standart {
+    display: none;
+  }
+
+  .tariffs__availability:first-child {
+    border: solid 2px #e5e5e5;
+  }
+
+  .tariffs__item,
+  .tariffs__availability {
+    width: 153px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tariffs__option-name {
+    font-size: 20px;
+    padding-left: 22px;
+  }
+
+  .tariffs__name {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+
+  .tariffs__price {
+    font-size: 22px;
+    margin-bottom: 21px;
+  }
+
+  .tariffs__item,
+  .tariffs__availability {
+    width: 233px;
+  }
 }
