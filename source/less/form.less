@@ -1,3 +1,7 @@
+.form__slogan {
+  display: none;
+}
+
 .form__names {
   border: none;
   order: 0;
@@ -27,16 +31,13 @@
 
 .form__label-text {
   display: block;
-  margin-bottom: 28px;
-}
-
-.form__label-text {
   font-size: 14px;
   line-height: 30px;
   text-align: left;
   font-weight: normal;
   color: #d22856;
   text-transform: uppercase;
+  margin-bottom: 28px;
 }
 
 .form__legend {
@@ -101,11 +102,6 @@
   justify-content: center;
 }
 
-.form__success-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
 .form__checkbox {
   width: 35px;
   height: 35px;
@@ -140,11 +136,6 @@
 
 .form__usercontacts {
   display: none;
-}
-
-.form__app-wrapper {
-  display: flex;
-  flex-direction: column;
 }
 
 .form__radio {
@@ -183,6 +174,7 @@
 }
 
 .form__emodescription {
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
   text-align: left;
@@ -224,4 +216,49 @@
 
 .form__note {
   margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .form__slogan {
+    display: block;
+  }
+
+  .photo__slogan {
+    font-size: 18px;
+  }
+
+  .form__apps {
+    order: 2;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    padding-top: 0px;
+  }
+
+  .form__success {
+    order: 4;
+  }
+
+  .form__text {
+    width: 490px;
+    margin-left: 20px;
+    margin-top: 0;
+    padding-right: 0;
+  }
+
+  .form__label-text {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+  }
+
+  .form__name-string {
+    width: 560px;
+  }
+
+  .form__pinkapp {
+    display: table;
+    background-color: #ffffff;
+    margin-bottom: 48px;
+    margin-top: 0;
+  }
 }

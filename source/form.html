@@ -38,7 +38,7 @@
         <h1 class="header-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         <section class="form">
             <h2 class="visually-hidden">Заполнить форму для участия в конкурсе</h2>
-            <p class="photo__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+            <p class="photo__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!<span class="form__slogan"> Пожалуйста, заполните форму ниже:</span></p>
             <form class="form__contest" name="contest" action="html.php" method="post">
               <div class="form__names">
                 <h3 class="form__username form__legend">Укажите ваше имя</h3>
@@ -56,15 +56,15 @@
                 <h3 class="form__pinkapp form__legend">С каким приложением путешествовали?</h3>
                 <div class="form__app-wrapper">
                   <label class="form__ios form__label-radio">Pink для iOS
-                    <input class="form__appradio visually-hidden" type="radio" name="ios" checked>
+                    <input class="form__appradio visually-hidden" type="radio" name="app" value="ios" checked>
                     <span class="form__radio"></span>
                   </label>
                   <label class="form__android form__label-radio">Pink на Android
-                    <input class="form__appradio visually-hidden" type="radio" name="android">
+                    <input class="form__appradio visually-hidden" type="radio" name="app" value="android">
                     <span class="form__radio"></span>
                   </label>
                   <label class="form__wphone form__label-radio">Windows Phone
-                    <input class="form__appradio visually-hidden" type="radio" name="wphone">
+                    <input class="form__appradio visually-hidden" type="radio" name="app" value="windows">
                     <span class="form__radio"></span>
                   </label>
                 </div>
@@ -109,7 +109,7 @@
               </div>
               <div class="form__emotions">
                 <h3 class="form__useremotions form__label-text">Опишите свои эмоции</h3>
-                <textarea class="form__emodescription" name="emotions" rows="7">Можно прям в красках, не стесняясь в выражениях</textarea>
+                <textarea class="form__emodescription" name="emotions" rows="7" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </div>
               <div class="form__button">
                 <input class="form__submit" type="submit" value="Отправить форму">
