@@ -2,6 +2,11 @@
   display: none;
 }
 
+.form__icontel,
+.form__iconmail {
+  display: none;
+}
+
 .form__names {
   border: none;
   order: 0;
@@ -218,7 +223,20 @@
   margin: 0 auto;
 }
 
+.form__alterinfo {
+  display: none;
+}
+
+.form__starnote {
+  color: #d22856;
+}
+
 @media (min-width: @tablet-width) {
+  .form__names {
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
   .form__slogan {
     display: block;
   }
@@ -232,10 +250,20 @@
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
     padding-top: 0px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 55px;
+    margin-bottom: 60px;
   }
 
   .form__success {
     order: 4;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 50px;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    margin-bottom: 60px;
   }
 
   .form__text {
@@ -258,7 +286,220 @@
   .form__pinkapp {
     display: table;
     background-color: #ffffff;
+    margin: -10px auto;
     margin-bottom: 48px;
-    margin-top: 0;
+    padding: 0 15px;
+  }
+
+  .form__contacts {
+    border: 2px solid #e5e5e5;
+    padding-top: 47px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+  }
+
+  .form__usercontacts {
+    display: table;
+    background-color: #ffffff;
+    margin: -57px auto;
+    margin-bottom: 40px;
+    padding: 0 15px;
+  }
+
+  .form__continfo {
+    display: none;
+  }
+
+  .form__alterinfo {
+    display: block;
+    margin-top: 21px;
+    margin-left: 30px;
+  }
+
+  .form__phone,
+  .form__email {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__email {
+    margin-bottom: 0px;
+  }
+
+  .form__phone {
+    margin-bottom: 40px;
+  }
+
+  .form__usersuccess {
+    display: table;
+    background-color: #ffffff;
+    margin: -51px auto;
+    margin-bottom: 47px;
+    padding: 0 15px;
+  }
+
+  .form__emotions {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 50px;
+    border: 2px solid #e5e5e5;
+    margin: 0;
+    margin-bottom: 70px;
+  }
+
+  .form__emodescription {
+    width: 492px;
+    height: 185px;
+    margin: 0 auto;
+  }
+
+  .form__useremotions {
+    display: table;
+    background-color: #ffffff;
+    margin: -17px auto;
+    margin-bottom: 40px;
+    padding: 0 15px;
+  }
+
+  .form__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+
+  .form__submit {
+    margin: 0;
+    margin-right: 140px;
+    margin-bottom: 88px;
+  }
+
+  .form__phone-wrapper,
+  .form__email-wrapper {
+    display: flex;
+  }
+
+  .form__userphone,
+  .form__usermail {
+    width: 410px;
+    margin-bottom: 20px;
+  }
+
+  .form__icontel,
+  .form__iconmail {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #e5e5e5;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__deskform-wrapper {
+    padding-left: 130px;
+    padding-top: 100px;
+    padding-right: 132px;
+    padding-bottom: 34px;
+    margin-bottom: 25px;
+  }
+
+  .photo__slogan {
+    margin: 0 auto;
+    margin-bottom: 75px;
+  }
+
+  .form__usernameapp-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__surname-string,
+  .form__patronymic-string {
+    width: 337px;
+    padding-right: 139px;
+  }
+  .form__name-string {
+    width: 376px;
+    padding-right: 179px;
+  }
+
+  .form__label-text {
+    padding: 0;
+  }
+
+  .form__names {
+    padding: 0;
+    margin: 0;
+    margin-right: 74px;
+  }
+
+  .form__apps {
+    margin: 0;
+    margin-bottom: 62px;
+  }
+
+  .form__contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__usercontacts {
+    display: table;
+    background-color: #ffffff;
+    margin: -57px auto;
+    margin-bottom: 34px;
+    padding: 0 15px;
+  }
+
+  .form__userphone,
+  .form__usermail {
+    width: 300px;
+    margin: 0;
+  }
+
+  .form__phone {
+    margin: 0;
+  }
+
+  .form__success-wrapper {
+    display: flex;
+  }
+
+  .form__desktop-onecolumn,
+  .form__desktop-twocolumn {
+    margin-right: 50px;
+  }
+
+  .form__checkbox {
+    margin-right: 23px;
+  }
+
+  .form__sunburnt,
+  .form__souvenirs,
+  .form__hotel {
+    margin-bottom: 0;
+  }
+
+  .form__useremotions {
+    display: table;
+    background-color: #ffffff;
+    margin: -15px auto;
+    margin-bottom: 37px;
+    padding: 0 15px;
+  }
+
+  .form__submit {
+    margin: 0;
+    margin-bottom: 72px;
+  }
+
+  .form__note {
+    margin: 0;
+    margin-left: auto;
   }
 }
