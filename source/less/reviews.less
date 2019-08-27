@@ -24,6 +24,31 @@
   display: none;
 }
 
+.reviews__toggles {
+  text-align: center;
+  margin-bottom: 135px;
+}
+
+.reviews__slider,
+.tariffs__slider {
+  width: 6px;
+  height: 6px;
+  background-color: #283645;
+  border-radius: 3px;
+  border-color: #283645;
+  opacity: 0.3;
+  padding: 0;
+  margin-right: 19px;
+}
+
+.reviews__slider--active,
+.tariffs__slider--active {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  box-shadow: 0 0 0 4px #283645, 0 0 0 4px #283645;
+  opacity: 1;
+}
+
 @media (min-width: @tablet-width) {
   .reviews__user-text {
     font-size: 18px;

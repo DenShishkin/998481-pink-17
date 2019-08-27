@@ -1,5 +1,16 @@
 .header-title {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  font-style: normal;
+  line-height: normal;
+  color: #ffffff;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   display: none;
+  padding: 190px 0;
+  margin-top: -190px;
 }
 
 .photo__slogan {
@@ -17,12 +28,19 @@
   width: 100%;
 }
 
+.page-main__wrapper {
+  margin-bottom: 46px;
+}
+
 @media (min-width: @tablet-width) {
   .header-title {
     display: block;
-    font-size: 50px;
-    margin: 0;
+    font-size: 40px;
     color: red;
+  }
+
+  .page-main__wrapper {
+    padding-left: 20px;
   }
 
   .photo__slogan {
@@ -36,7 +54,5 @@
 }
 
 @media (min-width: @desktop-width) {
-  .header-title {
-    display: block;
-  }
+
 }
