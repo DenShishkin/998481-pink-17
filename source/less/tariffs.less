@@ -36,13 +36,6 @@
   background-repeat: no-repeat;
   overflow: hidden;
   z-index: 20;
-  text-indent: -1000px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 10px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 
 .tariffs__availability-standart {
@@ -62,6 +55,7 @@
 }
 
 .tariffs__name {
+  position: relative;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -69,6 +63,22 @@
   color: #ffffff;
   margin: 0;
   margin-bottom: 10px;
+}
+
+.tariffs__texthit {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 24px;
+  height: 26px;
+  transform: rotate(-45deg);
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 10px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  z-index: 21;
 }
 
 .tariffs__price {

@@ -5,6 +5,9 @@
 }
 
 .header-nav__list {
+  position: absolute;
+  left: 0;
+  top: 100%;
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
@@ -14,6 +17,28 @@
   list-style: none;
   margin: 0 auto;
   padding: 0;
+  width: 320px;
+}
+
+.header-nav__toggle {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-image: url(../img/icon-menu-burger.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 24px;
+  border: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .header-nav__list {
+    width: 660px;
+    color: red;
+  }
+
 }
 
 @media (min-width: @desktop-width) {
@@ -23,9 +48,5 @@
 
   .header-nav__toggle {
     display: none;
-  }
-
-  .header-nav {
-
   }
 }
