@@ -1,6 +1,5 @@
 .download-app {
   background-color: #1e2630;
-
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -15,7 +14,7 @@
 }
 
 .download-app__button {
-  display: block;
+  display: table;
   font-size: 18px;
   line-height: 18px;
   text-align: center;
@@ -63,5 +62,26 @@
 
   .download-app__comment {
     font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download-app__button {
+    font-size: 21px;
+    line-height: 18px;
+    padding-left: 31px;
+    padding-right: 32px;
+    padding-top: 19px;
+    padding-bottom: 16px;
+  }
+
+.download-app {
+  padding-left: 130px;
+  padding-right: 130px;
+  }
+
+  .download-app__comment {
+    font-size: 18px;
+    width: 310px;
   }
 }

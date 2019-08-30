@@ -36,7 +36,7 @@
 @media (min-width: @tablet-width) {
   .header-nav__list {
     width: 660px;
-    color: red;
+    background: red;
   }
 
 }
@@ -44,9 +44,20 @@
 @media (min-width: @desktop-width) {
   .header-nav__list {
     display: flex;
+    position: static;
+    flex-wrap: wrap;
+    width: 730px;
   }
 
   .header-nav__toggle {
     display: none;
+  }
+
+  .header-nav {
+    width: auto;
+  }
+
+  .site-list__item {
+    margin-right: 81px;
   }
 }
