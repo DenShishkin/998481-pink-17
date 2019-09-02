@@ -91,13 +91,16 @@
 
 .publication__icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 40px;
+  padding-left: 36px;
+  padding-right: 44px;
 }
 
 .publication__icon {
   border: none;
   background: #f2f2f2;
+  padding: 0;
 }
 
 .publication__icon-range {
@@ -109,6 +112,10 @@
   line-height: 30px;
   text-align: center;
   color: #283645;
+}
+
+.icon__contrast {
+ flex-shrink: 0;
 }
 
 @media (min-width: @tablet-width) {
