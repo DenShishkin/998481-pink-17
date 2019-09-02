@@ -12,6 +12,8 @@
   line-height: normal;
   text-align: center;
   color: #283645;
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
 .contacts__value {
@@ -20,6 +22,8 @@
   line-height: normal;
   text-align: center;
   color: #d22856;
+  margin-top: 0;
+  margin-bottom: 48px;
 }
 
 .contacts__map iframe {
@@ -27,12 +31,23 @@
   width: 100%;
 }
 
+.contacts__slogan-wrapper {
+  margin-bottom: 44px;
+}
+
 @media (min-width: @tablet-width) {
   .contacts__slogan {
     font-size: 40px;
+    margin-top: 0;
   }
 
   .contacts__wrapp {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .contacts__phone {
+    margin-right: 100px;
   }
 }

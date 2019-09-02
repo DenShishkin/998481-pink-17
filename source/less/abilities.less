@@ -6,6 +6,10 @@
   color: #283645;
 }
 
+.abilities__slogan-wrapper {
+  margin-bottom: 119px;
+}
+
 .abilities__list {
   list-style: none;
   margin: 0;
@@ -67,8 +71,23 @@
 }
 
 @media (min-width: @desktop-width) {
+  .abilities {
+    margin-bottom: 73px;
+  }
+
+  .abilities__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .abilities__description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
   .abilities__slogan {
     font-size: 50px;
+    margin: 0;
   }
 
   .red-image,
@@ -79,16 +98,38 @@
   .abilities__background {
     display: flex;
     flex-direction: column-reverse;
+    padding-left: 163px;
+    padding-right: 165px;
   }
 
   .abilities__list {
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    padding: 0;
   }
 
   .abilities__wrapper {
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .abilities__slogan-wrapper {
+    width: 731px;
+    margin-left: 234px;
+  }
+
+  .abilities__down-image {
+    margin: 0;
+  }
+
+  .abilities__item {
+    margin-right: 90px;
+  }
+
+  .abilities__item:last-child {
+    margin-right: 0;
   }
 }

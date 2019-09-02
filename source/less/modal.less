@@ -1,0 +1,124 @@
+.modal {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.modal__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+}
+
+.modal__text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: normal;
+  color: #283645;
+}
+
+.modal__alarm {
+  display: none;
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  top: 5%;
+  left: 17%;
+  opacity: 1;
+  z-index: 1000;
+}
+
+.modal__button {
+  padding-top: 23px;
+  padding-bottom: 22px;
+  border: solid 2px #2aab6d;
+  background-color: #2aab6d;
+  border-radius: 3px;
+  width: 100%;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.modal__application {
+  display: none;
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  top: 50%;
+  left: 17%;
+  opacity: 1;
+  z-index: 1000;
+}
+
+.modal__text-wrapper {
+  padding-left: 27px;
+  padding-right: 27px;
+  padding-top: 19px;
+  margin-bottom: 37px;
+}
+
+.modal__button-wrapper {
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  background-color: #f2f2f2;
+}
+
+.button__alarm {
+  background-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .modal {
+    width: 780px;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .text__alarm {
+    padding-left: 214px;
+    padding-right: 219px;
+    padding-top: 50px;
+    padding-bottom: 62px;
+    margin-bottom: 0;
+  }
+
+  .button__alarm {
+    background-color: #f2f2f2;
+    padding-left: 242px;
+    padding-right: 242px;
+    padding-top: 49px;
+    padding-bottom: 55px;
+  }
+
+  .text__application {
+    padding-left: 193px;
+    padding-right: 195px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+  }
+
+  .button__application {
+    padding-left: 162px;
+    padding-right: 162px;
+    padding-top: 50px;
+    padding-bottom: 54px;
+  }
+}

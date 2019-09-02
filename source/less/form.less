@@ -1,0 +1,503 @@
+.form__slogan {
+  display: none;
+}
+
+.form__icontel,
+.form__iconmail {
+  display: none;
+}
+
+.form__names {
+  border: none;
+  order: 0;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.form__username {
+  display: none;
+}
+
+.form__text {
+  width: 276px;
+  height: 60px;
+  border: 2px solid #e5e5e5;
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  font-weight: normal;
+  color: #283645;
+  padding-left: 22px;
+  padding-top: 22px;
+  padding-right: 79px;
+  padding-bottom: 18px;
+}
+
+.form__label-text {
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: left;
+  font-weight: normal;
+  color: #d22856;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.form__legend {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  font-weight: normal;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.form__contest {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__apps {
+  order: 4;
+  border: none;
+  background-color: #f2f2f2;
+  padding-left: 21px;
+  padding-top: 41px;
+  padding-right: 73px;
+  padding-bottom: 44px;
+  margin-bottom: 41px;
+}
+
+.form__contacts {
+  order: 3;
+  border: none;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-bottom: 44px;
+}
+
+.form__success {
+  border: none;
+  order: 2;
+  background-color: #f2f2f2;
+  padding-left: 22px;
+  padding-top: 41px;
+  padding-right: 33px;
+  padding-bottom: 44px;
+  margin-bottom: 41px;
+}
+
+.form__emotions {
+  order: 5;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form__button {
+  order: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-bottom: 64px;
+}
+
+.form__checkbox {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+  display: inline-block;
+  margin-right: 33px;
+}
+
+.form__successbox:checked + .form__checkbox {
+  background-image: url("../img/yes-svg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form__label-checkbox {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  font-weight: normal;
+  color: #283645;
+  margin-bottom: 47px;
+}
+
+.form__usersuccess {
+  margin-top: 0;
+  margin-bottom: 42px;
+}
+
+.form__usercontacts {
+  display: none;
+}
+
+.form__radio {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+  display: inline-block;
+  margin-right: 33px;
+  position: relative;
+}
+
+.form__appradio:checked + .form__radio::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #d22856;
+  top: 8px;
+  left: 8px;
+}
+
+.form__label-radio {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  font-weight: normal;
+  color: #283645;
+  margin-bottom: 39px;
+}
+
+.form__emodescription {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  font-weight: normal;
+  color: #283645;
+  border: 2px solid #e5e5e5;
+  resize: none;
+  width: 276px;
+  height: 197px;
+}
+
+.form__useremotions {
+  margin: 0 auto;
+  margin-bottom: 19px;
+}
+
+.form__submit {
+  background-color: #2aab6d;
+  border: 2px solid #2aab6d;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  padding-left: 45px;
+  padding-top: 23px;
+  padding-right: 45px;
+  padding-bottom: 22px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  border-radius: 5px;
+}
+
+.form__note {
+  margin: 0 auto;
+}
+
+.form__alterinfo {
+  display: none;
+}
+
+.form__starnote {
+  color: #d22856;
+}
+
+@media (min-width: @tablet-width) {
+  .form__names {
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  .form__slogan {
+    display: block;
+  }
+
+  .photo__slogan {
+    font-size: 18px;
+  }
+
+  .form__apps {
+    order: 2;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    padding-top: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 55px;
+    margin-bottom: 60px;
+  }
+
+  .form__success {
+    order: 4;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 50px;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    margin-bottom: 60px;
+  }
+
+  .form__text {
+    width: 490px;
+    margin-left: 20px;
+    margin-top: 0;
+    padding-right: 0;
+  }
+
+  .form__label-text {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+  }
+
+  .form__name-string {
+    width: 560px;
+  }
+
+  .form__pinkapp {
+    display: table;
+    background-color: #ffffff;
+    margin: -10px auto;
+    margin-bottom: 48px;
+    padding: 0 15px;
+  }
+
+  .form__contacts {
+    border: 2px solid #e5e5e5;
+    padding-top: 47px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+  }
+
+  .form__usercontacts {
+    display: table;
+    background-color: #ffffff;
+    margin: -57px auto;
+    margin-bottom: 40px;
+    padding: 0 15px;
+  }
+
+  .form__continfo {
+    display: none;
+  }
+
+  .form__alterinfo {
+    display: block;
+    margin-top: 21px;
+    margin-left: 30px;
+  }
+
+  .form__phone,
+  .form__email {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__email {
+    margin-bottom: 0;
+  }
+
+  .form__phone {
+    margin-bottom: 40px;
+  }
+
+  .form__usersuccess {
+    display: table;
+    background-color: #ffffff;
+    margin: -51px auto;
+    margin-bottom: 47px;
+    padding: 0 15px;
+  }
+
+  .form__emotions {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 50px;
+    border: 2px solid #e5e5e5;
+    margin: 0;
+    margin-bottom: 70px;
+  }
+
+  .form__emodescription {
+    width: 492px;
+    height: 185px;
+    margin: 0 auto;
+  }
+
+  .form__useremotions {
+    display: table;
+    background-color: #ffffff;
+    margin: -17px auto;
+    margin-bottom: 40px;
+    padding: 0 15px;
+  }
+
+  .form__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+
+  .form__submit {
+    margin: 0;
+    margin-right: 140px;
+    margin-bottom: 88px;
+  }
+
+  .form__phone-wrapper,
+  .form__email-wrapper {
+    display: flex;
+  }
+
+  .form__userphone,
+  .form__usermail {
+    width: 410px;
+    margin-bottom: 20px;
+  }
+
+  .form__icontel,
+  .form__iconmail {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #e5e5e5;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__deskform-wrapper {
+    padding-left: 130px;
+    padding-top: 100px;
+    padding-right: 132px;
+    padding-bottom: 34px;
+    margin-bottom: 25px;
+  }
+
+  .photo__slogan {
+    margin: 0 auto;
+    margin-bottom: 75px;
+  }
+
+  .form__usernameapp-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__surname-string,
+  .form__patronymic-string {
+    width: 337px;
+    padding-right: 139px;
+  }
+
+  .form__name-string {
+    width: 376px;
+    padding-right: 179px;
+  }
+
+  .form__label-text {
+    padding: 0;
+  }
+
+  .form__names {
+    padding: 0;
+    margin: 0;
+    margin-right: 74px;
+  }
+
+  .form__apps {
+    margin: 0;
+    margin-bottom: 62px;
+  }
+
+  .form__contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__usercontacts {
+    display: table;
+    background-color: #ffffff;
+    margin: -57px auto;
+    margin-bottom: 34px;
+    padding: 0 15px;
+  }
+
+  .form__userphone,
+  .form__usermail {
+    width: 300px;
+    margin: 0;
+  }
+
+  .form__phone {
+    margin: 0;
+  }
+
+  .form__success-wrapper {
+    display: flex;
+  }
+
+  .form__desktop-onecolumn,
+  .form__desktop-twocolumn {
+    margin-right: 50px;
+  }
+
+  .form__checkbox {
+    margin-right: 23px;
+  }
+
+  .form__sunburnt,
+  .form__souvenirs,
+  .form__hotel {
+    margin-bottom: 0;
+  }
+
+  .form__useremotions {
+    display: table;
+    background-color: #ffffff;
+    margin: -15px auto;
+    margin-bottom: 37px;
+    padding: 0 15px;
+  }
+
+  .form__submit {
+    margin: 0;
+    margin-bottom: 72px;
+  }
+
+  .form__note {
+    margin: 0;
+    margin-left: auto;
+  }
+}
