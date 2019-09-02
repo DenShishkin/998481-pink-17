@@ -105,6 +105,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-bottom: 64px;
 }
 
 .form__checkbox {
@@ -117,7 +120,7 @@
 }
 
 .form__successbox:checked + .form__checkbox {
-  background-image: url(../img/yes-svg.svg);
+  background-image: url("../img/yes-svg.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -196,12 +199,6 @@
   margin-bottom: 19px;
 }
 
-.form__button {
-  padding-left: 22px;
-  padding-right: 22px;
-  margin-bottom: 64px;
-}
-
 .form__submit {
   background-color: #2aab6d;
   border: 2px solid #2aab6d;
@@ -249,7 +246,7 @@
     order: 2;
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
-    padding-top: 0px;
+    padding-top: 0;
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 55px;
@@ -325,7 +322,7 @@
   }
 
   .form__email {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .form__phone {
@@ -423,6 +420,7 @@
     width: 337px;
     padding-right: 139px;
   }
+
   .form__name-string {
     width: 376px;
     padding-right: 179px;
