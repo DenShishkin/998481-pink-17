@@ -91,6 +91,26 @@
   padding-right: 20px;
 }
 
+.photo__caption-wrapper--active::after {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  width: 140px;
+  height: 36px;
+  background-color: #d22856;
+  content: "панорама дня";
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 11px;
+}
 
 @media (min-width: @tablet-width) {
   .photo__caption-wrapper--active {
@@ -100,6 +120,10 @@
     padding-left: 27px;
     padding-right: 29px;
     padding-bottom: 28px;
+  }
+
+  .photo__caption-wrapper--active::after {
+      top: 57px;
   }
 
   .photo__photo-item-wrapper {
@@ -132,6 +156,7 @@
     position: absolute;
     right: 25px;
     top: 105px;
+    bottom: initial;
   }
 
   .photo__user-text {
@@ -171,6 +196,11 @@
     padding-right: 32px;
     flex-wrap: wrap;
   }
+
+  .photo__caption-wrapper--active::after {
+      top: 54px;
+      right: 130px;
+    }
 
   .photo__posting-time--active{
     margin-right: 600px;
