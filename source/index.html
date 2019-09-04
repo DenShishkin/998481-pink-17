@@ -13,7 +13,11 @@
     <header class="page-header">
         <div class="page-header__wrapper">
             <a class="page-header__logo">
+              <picture>
+                <source media="(min-width: 1200px;)" srcset="img/logo-pink-blue-desktop.svg">
+                <source media="(min-width: 660px;)" srcset="img/logo-pink-white-tablet.svg">
                 <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Приложение Пинк">
+              </picture>
             </a>
             <nav class="header-nav">
                 <button class="header-nav__toggle" type="button"></button>
@@ -67,9 +71,21 @@
                                 <p class="abilities__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
                 </ul>
                 <div class="abilities__wrapper">
+                  <picture>
+                    <source media="(min-width: 1200px;)" srcset="img/iphone-screen-1-desktop@1x.png">
+                    <source media="(min-width: 660px;)" srcset="img/iphone-screen-1-tablet@1x.png">
                     <img class="abilities__down-image smile-image" src="img/iphone-screen-mobile@1x.png" alt="Изображение экрана телефона со смайликом">
-                    <img class="abilities__down-image red-image" src="img/iphone-screen-2-desktop@1x.png" alt="Изображение экрана телефона красный вид">
-                    <img class="abilities__down-image black-image" src="img/iphone-screen-1-desktop@1x.png" alt="Изображение экрана телефона черно-белый вид">
+                  </picture>
+                  <picture>
+                    <source media="(min-width: 1200px;)" srcset="img/iphone-screen-2-desktop@1x.png">
+                    <source media="(min-width: 660px;)" srcset="img/iphone-screen-2-tablet@1x.png">
+                    <img class="abilities__down-image red-image" src="img/iphone-screen-mobile@1x.png" alt="Изображение экрана телефона красный вид">
+                  </picture>
+                  <picture>
+                    <source media="(min-width: 1200px;)" srcset="img/iphone-screen-3-desktop@1x.png">
+                    <source media="(min-width: 660px;)" srcset="img/iphone-screen-3-tablet@1x.png">
+                    <img class="abilities__down-image black-image" src="img/iphone-screen-mobile@1x.png" alt="Изображение экрана телефона черно-белый вид">
+                  </picture>
                 </div>
         </section>
         <section class="research">
