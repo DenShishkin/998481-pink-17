@@ -38,15 +38,23 @@
 }
 
 .download-app__system-icons {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
   margin-bottom: 28px;
 }
 
 .download-app__link--apple {
   margin-right: 34px;
+  margin-left: 37px;
 }
 
 .download-app__link--android {
   padding-right: 37px;
+}
+
+.download-app__link--windows {
+  margin-right: 37px;
 }
 
 @media (min-width: @tablet-width) {
@@ -62,6 +70,10 @@
 
   .download-app__comment {
     font-size: 18px;
+  }
+
+  .download-app__system-icons {
+    display: block;
   }
 }
 
@@ -83,5 +95,9 @@
   .download-app__comment {
     font-size: 18px;
     width: 310px;
+  }
+
+  .download-app__system-icons {
+    display: block;
   }
 }
